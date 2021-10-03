@@ -1,0 +1,81 @@
+version: "3"
+
+services:
+  #db
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    restart: always
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodb_data_container:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=admin
+  #mongo express
+  mongo-express:
+    image: mongo-express
+    container_name: mongo-express
+    restart: unless-stopped
+    environment:
+      - ME_CONFIG_MONGODB_SERVER=mongodb
+      - ME_CONFIG_MONGODB_PORT=27017
+      - ME_CONFIG_MONGODB_ENABLE_ADMIN=true
+      - ME_CONFIG_MONGODB_AUTH_DATABASE=admin
+      - ME_CONFIG_MONGODB_AUTH_USERNAME=admin
+      - ME_CONFIG_MONGODB_AUTH_PASSWORD=admin
+      - ME_CONFIG_BASICAUTH_USERNAME=dev
+      - ME_CONFIG_BASICAUTH_PASSWORD=dev
+    depends_on:
+      - mongodb
+    ports:
+      - "8888:8081"
+  #restore db data
+  restore:
+    image: mongo
+    container_name: restore
+    volumes:
+      - ./docker/backup:/db-dump
+    links:
+      - mongodb:mongodb
+    command: mongorestore --host mongodb --db discogs_next --authenticationDatabase admin  --username admin --password admin /db-dump/discogs_next
+  # next
+  web:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: web
+    restart: always
+    command: npm run dev
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+    ports:
+      - 3000:3000
+      - 8000:8000
+    links:
+      - mongodb
+    depends_on:
+      - mongodb
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+  #storybook
+  storybook:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.storybook
+    container_name: storybook
+    restart: always
+    command: npm run storybook
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+    ports:
+      - 6006:6006
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+volumes:
+  mongodb_data_container:

@@ -1,0 +1,12 @@
+$primary-dark: rgb(50, 50, 61);
+$primary-light: rgb(226, 216, 170);
+
+$dark-bg: darken($primary-dark, 5%);
+$dark-fg: lighten($primary-dark, 40%);
+
+$light-bg: lighten($primary-light, 20%);
+$light-fg: darken($primary-light, 80%);
+
+$success: #7ee695;
+$warning: #f0ee87;
+$danger: #ec7373;

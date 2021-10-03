@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Notification snapshot test 1`] = `
+.c0 {
+  position: fixed;
+  top: 90%;
+  width: 20%;
+  right: 5%;
+  text-align: center;
+  z-index: 10;
+  opacity: .8;
+}
+
+.c0 .danger {
+  color: white;
+}
+
+.c0 .success {
+  color: white;
+}
+
+.c0 .warning {
+  color: white;
+}
+
+<Notification>
+  <styledComponents__StyledNotification
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    <Card
+      body={false}
+      className="c0"
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+    >
+      <div
+        className="c0 card"
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+      >
+        <CardBody
+          className="success"
+        >
+          <div
+            className="success card-body"
+          >
+            Success
+          </div>
+        </CardBody>
+      </div>
+    </Card>
+  </styledComponents__StyledNotification>
+</Notification>
+`;

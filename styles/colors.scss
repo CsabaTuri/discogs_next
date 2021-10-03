@@ -1,0 +1,13 @@
+@import "variables.scss";
+
+:root {
+  --dark-bg: #{$dark-bg};
+  --dark-fg: #{$dark-fg};
+
+  --light-bg: #{$light-bg};
+  --light-fg: #{$light-fg};
+
+  --success: #{$success};
+  --warning: #{$warning};
+  --danger: #{$danger};
+}

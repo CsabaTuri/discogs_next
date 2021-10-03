@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["components/*"]
+    },
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "preserve",
+    "lib": ["dom", "es2017"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "preserveConstEnums": true,
+    "removeComments": false,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "esnext",
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "types": ["node"]
+  },
+  "include": [
+    "pages/*.tsx",
+    "pages/*.ts",
+    "pages/*/*.ts",
+    "pages/*/*.tsx",
+    "src/*.ts",
+    "src/*.tsx",
+    "src/*/*.ts",
+    "src/*/*.tsx",
+    "src/*/*/*.ts",
+    "src/*/*/*.tsx",
+    "src/*/*/*/*.ts",
+    "src/*/*/*/*.tsx",
+    "services/*.ts",
+    "services/*.tsx",
+    "services/*/*.ts",
+    "services/*/*.tsx",
+    "services/*/*/*.ts",
+    "services/*/*/*/*.ts",
+    "types/*ts"
+  ],
+  "exclude": [
+    "next-env.d.ts",
+    "node_modules",
+    "**/*.spec.ts",
+    "next.config.js",
+    "next-i18next.config.js"
+  ]
+}

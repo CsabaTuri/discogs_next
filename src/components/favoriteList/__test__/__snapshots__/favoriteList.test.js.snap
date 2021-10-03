@@ -1,0 +1,264 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FavoriteList snapshot test 1`] = `
+<FavoriteList
+  data={
+    Array [
+      Object {
+        "__typename": "FavReleases",
+        "release_id": "10521",
+        "release_name": "Velvet Acid Christ - Fun With Knives",
+      },
+      Object {
+        "__typename": "FavReleases",
+        "release_id": "1393615",
+        "release_name": "X-102 - Titan EP",
+      },
+      Object {
+        "__typename": "FavReleases",
+        "release_id": "2664677",
+        "release_name": "Caetano* E Chico* - Juntos E Ao Vivo",
+      },
+    ]
+  }
+  mutation={
+    Object {
+      "definitions": Array [
+        Object {
+          "directives": Array [],
+          "kind": "OperationDefinition",
+          "name": Object {
+            "kind": "Name",
+            "value": "removeReleaseFromFavorites",
+          },
+          "operation": "mutation",
+          "selectionSet": Object {
+            "kind": "SelectionSet",
+            "selections": Array [
+              Object {
+                "arguments": Array [
+                  Object {
+                    "kind": "Argument",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "release_id",
+                    },
+                    "value": Object {
+                      "kind": "Variable",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "id",
+                      },
+                    },
+                  },
+                ],
+                "directives": Array [],
+                "kind": "Field",
+                "name": Object {
+                  "kind": "Name",
+                  "value": "remove_release_from_favorites",
+                },
+              },
+            ],
+          },
+          "variableDefinitions": Array [
+            Object {
+              "directives": Array [],
+              "kind": "VariableDefinition",
+              "type": Object {
+                "kind": "NonNullType",
+                "type": Object {
+                  "kind": "NamedType",
+                  "name": Object {
+                    "kind": "Name",
+                    "value": "ID",
+                  },
+                },
+              },
+              "variable": Object {
+                "kind": "Variable",
+                "name": Object {
+                  "kind": "Name",
+                  "value": "id",
+                },
+              },
+            },
+          ],
+        },
+      ],
+      "kind": "Document",
+      "loc": Object {
+        "end": 106,
+        "start": 0,
+      },
+    }
+  }
+  type="release"
+>
+  <Link
+    href="/release/10521"
+  >
+    <a
+      href="/release/10521"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      Velvet Acid Christ - Fun With Knives
+    </a>
+  </Link>
+  <Button
+    active={false}
+    disabled={false}
+    onClick={[Function]}
+    variant="danger"
+  >
+    <button
+      className="btn btn-danger"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      <FaTrash>
+        <IconBase
+          attr={
+            Object {
+              "viewBox": "0 0 448 512",
+            }
+          }
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 448 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+              key="0"
+            />
+          </svg>
+        </IconBase>
+      </FaTrash>
+    </button>
+  </Button>
+  <br />
+  <Link
+    href="/release/1393615"
+  >
+    <a
+      href="/release/1393615"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      X-102 - Titan EP
+    </a>
+  </Link>
+  <Button
+    active={false}
+    disabled={false}
+    onClick={[Function]}
+    variant="danger"
+  >
+    <button
+      className="btn btn-danger"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      <FaTrash>
+        <IconBase
+          attr={
+            Object {
+              "viewBox": "0 0 448 512",
+            }
+          }
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 448 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+              key="0"
+            />
+          </svg>
+        </IconBase>
+      </FaTrash>
+    </button>
+  </Button>
+  <br />
+  <Link
+    href="/release/2664677"
+  >
+    <a
+      href="/release/2664677"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      Caetano* E Chico* - Juntos E Ao Vivo
+    </a>
+  </Link>
+  <Button
+    active={false}
+    disabled={false}
+    onClick={[Function]}
+    variant="danger"
+  >
+    <button
+      className="btn btn-danger"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      <FaTrash>
+        <IconBase
+          attr={
+            Object {
+              "viewBox": "0 0 448 512",
+            }
+          }
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 448 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+              key="0"
+            />
+          </svg>
+        </IconBase>
+      </FaTrash>
+    </button>
+  </Button>
+  <br />
+</FavoriteList>
+`;

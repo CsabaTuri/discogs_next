@@ -1,0 +1,1719 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs snapshot test 1`] = `
+.c0 a {
+  padding: 0.4em 1em;
+  margin-left: 1em;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: var(--dark-bg);
+  border: none;
+  border-radius: 3px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: var(--dark-fg);
+}
+
+.c0 a ~ svg {
+  margin: 1.4em;
+}
+
+.c0 a:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: linear-gradient( 120deg,transparent,var(--dark-fg),transparent );
+  -webkit-transition: all 650ms;
+  transition: all 650ms;
+  color: var(--dark-fg);
+  border: none;
+}
+
+.c0 a.active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: linear-gradient( 120deg,transparent,var(--dark-fg),transparent );
+  -webkit-transition: all 650ms;
+  transition: all 650ms;
+  color: var(--dark-fg);
+  border: none;
+}
+
+<MyTabs
+  data={
+    Object {
+      "getFavoritesArtist": Array [
+        Object {
+          "__typename": "FavArtists",
+          "artist_id": "251596",
+          "artist_name": "Martin Birch",
+        },
+        Object {
+          "__typename": "FavArtists",
+          "artist_id": "265502",
+          "artist_name": "John Golden",
+        },
+        Object {
+          "__typename": "FavArtists",
+          "artist_id": "386598",
+          "artist_name": "Nilesh Patel",
+        },
+      ],
+      "getFavoritesLabel": Array [
+        Object {
+          "__typename": "FavLabels",
+          "label_id": "186075",
+          "label_name": "The Mastering Lab",
+        },
+        Object {
+          "__typename": "FavLabels",
+          "label_id": "265113",
+          "label_name": "SST Brüggemann GmbH",
+        },
+        Object {
+          "__typename": "FavLabels",
+          "label_id": "66254",
+          "label_name": "Record Technology Incorporated",
+        },
+      ],
+      "getFavoritesMaster": Array [
+        Object {
+          "__typename": "FavMasters",
+          "master_id": "32710",
+          "master_name": "Pet Shop Boys - It's Alright",
+        },
+        Object {
+          "__typename": "FavMasters",
+          "master_id": "677440",
+          "master_name": "Pixies - Indie Cindy",
+        },
+        Object {
+          "__typename": "FavMasters",
+          "master_id": "767810",
+          "master_name": "J. Cole - 2014 Forest Hills Drive",
+        },
+      ],
+      "getFavoritesRelease": Array [
+        Object {
+          "__typename": "FavReleases",
+          "release_id": "10521",
+          "release_name": "Velvet Acid Christ - Fun With Knives",
+        },
+        Object {
+          "__typename": "FavReleases",
+          "release_id": "1393615",
+          "release_name": "X-102 - Titan EP",
+        },
+        Object {
+          "__typename": "FavReleases",
+          "release_id": "2664677",
+          "release_name": "Caetano* E Chico* - Juntos E Ao Vivo",
+        },
+      ],
+    }
+  }
+>
+  <styledComponents__StyledTabs
+    defaultActiveKey="artist"
+    id="uncontrolled-tab-example"
+    theme={
+      Object {
+        "bg": "var(--dark-bg)",
+        "fg": "var(--dark-fg)",
+      }
+    }
+  >
+    <Tabs
+      className="c0"
+      defaultActiveKey="artist"
+      id="uncontrolled-tab-example"
+      mountOnEnter={false}
+      theme={
+        Object {
+          "bg": "var(--dark-bg)",
+          "fg": "var(--dark-fg)",
+        }
+      }
+      unmountOnExit={false}
+      variant="tabs"
+    >
+      <TabContainer
+        activeKey="artist"
+        id="uncontrolled-tab-example"
+        mountOnEnter={false}
+        onSelect={[Function]}
+        unmountOnExit={false}
+      >
+        <Nav
+          as="nav"
+          className="c0"
+          fill={false}
+          justify={false}
+          role="tablist"
+          theme={
+            Object {
+              "bg": "var(--dark-bg)",
+              "fg": "var(--dark-fg)",
+            }
+          }
+          variant="tabs"
+        >
+          <ForwardRef
+            as="nav"
+            className="c0 nav nav-tabs"
+            onSelect={[Function]}
+            role="tablist"
+            theme={
+              Object {
+                "bg": "var(--dark-bg)",
+                "fg": "var(--dark-fg)",
+              }
+            }
+          >
+            <nav
+              className="c0 nav nav-tabs"
+              onKeyDown={[Function]}
+              role="tablist"
+              theme={
+                Object {
+                  "bg": "var(--dark-bg)",
+                  "fg": "var(--dark-fg)",
+                }
+              }
+            >
+              <NavItem
+                as={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "defaultProps": Object {
+                      "as": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "render": [Function],
+                      },
+                      "disabled": false,
+                    },
+                    "render": [Function],
+                  }
+                }
+                eventKey="artist"
+                key=".0"
+              >
+                <NavLink
+                  as={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "render": [Function],
+                    }
+                  }
+                  className="nav-item"
+                  disabled={false}
+                  eventKey="artist"
+                >
+                  <ForwardRef
+                    as={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "render": [Function],
+                      }
+                    }
+                    className="nav-item nav-link"
+                    disabled={false}
+                    eventKey="artist"
+                  >
+                    <SafeAnchor
+                      aria-controls="uncontrolled-tab-example-tabpane-artist"
+                      aria-selected={true}
+                      className="nav-item nav-link active"
+                      data-rb-event-key="artist"
+                      disabled={false}
+                      id="uncontrolled-tab-example-tab-artist"
+                      onClick={[Function]}
+                      role="tab"
+                    >
+                      <a
+                        aria-controls="uncontrolled-tab-example-tabpane-artist"
+                        aria-selected={true}
+                        className="nav-item nav-link active"
+                        data-rb-event-key="artist"
+                        href="#"
+                        id="uncontrolled-tab-example-tab-artist"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        role="tab"
+                      >
+                        artist
+                      </a>
+                    </SafeAnchor>
+                  </ForwardRef>
+                </NavLink>
+              </NavItem>
+              <NavItem
+                as={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "defaultProps": Object {
+                      "as": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "render": [Function],
+                      },
+                      "disabled": false,
+                    },
+                    "render": [Function],
+                  }
+                }
+                eventKey="label"
+                key=".1"
+              >
+                <NavLink
+                  as={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "render": [Function],
+                    }
+                  }
+                  className="nav-item"
+                  disabled={false}
+                  eventKey="label"
+                >
+                  <ForwardRef
+                    as={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "render": [Function],
+                      }
+                    }
+                    className="nav-item nav-link"
+                    disabled={false}
+                    eventKey="label"
+                  >
+                    <SafeAnchor
+                      aria-controls="uncontrolled-tab-example-tabpane-label"
+                      aria-selected={false}
+                      className="nav-item nav-link"
+                      data-rb-event-key="label"
+                      disabled={false}
+                      id="uncontrolled-tab-example-tab-label"
+                      onClick={[Function]}
+                      role="tab"
+                    >
+                      <a
+                        aria-controls="uncontrolled-tab-example-tabpane-label"
+                        aria-selected={false}
+                        className="nav-item nav-link"
+                        data-rb-event-key="label"
+                        href="#"
+                        id="uncontrolled-tab-example-tab-label"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        role="tab"
+                      >
+                        label
+                      </a>
+                    </SafeAnchor>
+                  </ForwardRef>
+                </NavLink>
+              </NavItem>
+              <NavItem
+                as={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "defaultProps": Object {
+                      "as": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "render": [Function],
+                      },
+                      "disabled": false,
+                    },
+                    "render": [Function],
+                  }
+                }
+                eventKey="master"
+                key=".2"
+              >
+                <NavLink
+                  as={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "render": [Function],
+                    }
+                  }
+                  className="nav-item"
+                  disabled={false}
+                  eventKey="master"
+                >
+                  <ForwardRef
+                    as={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "render": [Function],
+                      }
+                    }
+                    className="nav-item nav-link"
+                    disabled={false}
+                    eventKey="master"
+                  >
+                    <SafeAnchor
+                      aria-controls="uncontrolled-tab-example-tabpane-master"
+                      aria-selected={false}
+                      className="nav-item nav-link"
+                      data-rb-event-key="master"
+                      disabled={false}
+                      id="uncontrolled-tab-example-tab-master"
+                      onClick={[Function]}
+                      role="tab"
+                    >
+                      <a
+                        aria-controls="uncontrolled-tab-example-tabpane-master"
+                        aria-selected={false}
+                        className="nav-item nav-link"
+                        data-rb-event-key="master"
+                        href="#"
+                        id="uncontrolled-tab-example-tab-master"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        role="tab"
+                      >
+                        master
+                      </a>
+                    </SafeAnchor>
+                  </ForwardRef>
+                </NavLink>
+              </NavItem>
+              <NavItem
+                as={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "defaultProps": Object {
+                      "as": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "render": [Function],
+                      },
+                      "disabled": false,
+                    },
+                    "render": [Function],
+                  }
+                }
+                eventKey="release"
+                key=".3"
+              >
+                <NavLink
+                  as={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "render": [Function],
+                    }
+                  }
+                  className="nav-item"
+                  disabled={false}
+                  eventKey="release"
+                >
+                  <ForwardRef
+                    as={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "render": [Function],
+                      }
+                    }
+                    className="nav-item nav-link"
+                    disabled={false}
+                    eventKey="release"
+                  >
+                    <SafeAnchor
+                      aria-controls="uncontrolled-tab-example-tabpane-release"
+                      aria-selected={false}
+                      className="nav-item nav-link"
+                      data-rb-event-key="release"
+                      disabled={false}
+                      id="uncontrolled-tab-example-tab-release"
+                      onClick={[Function]}
+                      role="tab"
+                    >
+                      <a
+                        aria-controls="uncontrolled-tab-example-tabpane-release"
+                        aria-selected={false}
+                        className="nav-item nav-link"
+                        data-rb-event-key="release"
+                        href="#"
+                        id="uncontrolled-tab-example-tab-release"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        role="tab"
+                      >
+                        release
+                      </a>
+                    </SafeAnchor>
+                  </ForwardRef>
+                </NavLink>
+              </NavItem>
+            </nav>
+          </ForwardRef>
+        </Nav>
+        <ForwardRef>
+          <div
+            className="tab-content"
+          >
+            <TabPane
+              eventKey="artist"
+              key=".0"
+            >
+              <Fade
+                appear={false}
+                in={true}
+                mountOnEnter={false}
+                timeout={300}
+                unmountOnExit={false}
+              >
+                <Transition
+                  addEndListener={[Function]}
+                  appear={false}
+                  enter={true}
+                  exit={true}
+                  in={true}
+                  mountOnEnter={false}
+                  onEnter={[Function]}
+                  onEntered={[Function]}
+                  onEntering={[Function]}
+                  onExit={[Function]}
+                  onExited={[Function]}
+                  onExiting={[Function]}
+                  timeout={300}
+                  unmountOnExit={false}
+                >
+                  <div
+                    aria-hidden={false}
+                    aria-labelledby="uncontrolled-tab-example-tab-artist"
+                    className="fade tab-pane active show"
+                    id="uncontrolled-tab-example-tabpane-artist"
+                    role="tabpanel"
+                  >
+                    <FavoriteList
+                      data={
+                        Array [
+                          Object {
+                            "__typename": "FavArtists",
+                            "artist_id": "251596",
+                            "artist_name": "Martin Birch",
+                          },
+                          Object {
+                            "__typename": "FavArtists",
+                            "artist_id": "265502",
+                            "artist_name": "John Golden",
+                          },
+                          Object {
+                            "__typename": "FavArtists",
+                            "artist_id": "386598",
+                            "artist_name": "Nilesh Patel",
+                          },
+                        ]
+                      }
+                      mutation={
+                        Object {
+                          "definitions": Array [
+                            Object {
+                              "directives": Array [],
+                              "kind": "OperationDefinition",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "removeArtistFromFavorites",
+                              },
+                              "operation": "mutation",
+                              "selectionSet": Object {
+                                "kind": "SelectionSet",
+                                "selections": Array [
+                                  Object {
+                                    "alias": undefined,
+                                    "arguments": Array [
+                                      Object {
+                                        "kind": "Argument",
+                                        "name": Object {
+                                          "kind": "Name",
+                                          "value": "artist_id",
+                                        },
+                                        "value": Object {
+                                          "kind": "Variable",
+                                          "name": Object {
+                                            "kind": "Name",
+                                            "value": "id",
+                                          },
+                                        },
+                                      },
+                                    ],
+                                    "directives": Array [],
+                                    "kind": "Field",
+                                    "name": Object {
+                                      "kind": "Name",
+                                      "value": "remove_artist_from_favorites",
+                                    },
+                                    "selectionSet": undefined,
+                                  },
+                                ],
+                              },
+                              "variableDefinitions": Array [
+                                Object {
+                                  "defaultValue": undefined,
+                                  "directives": Array [],
+                                  "kind": "VariableDefinition",
+                                  "type": Object {
+                                    "kind": "NonNullType",
+                                    "type": Object {
+                                      "kind": "NamedType",
+                                      "name": Object {
+                                        "kind": "Name",
+                                        "value": "ID",
+                                      },
+                                    },
+                                  },
+                                  "variable": Object {
+                                    "kind": "Variable",
+                                    "name": Object {
+                                      "kind": "Name",
+                                      "value": "id",
+                                    },
+                                  },
+                                },
+                              ],
+                            },
+                          ],
+                          "kind": "Document",
+                          "loc": Object {
+                            "end": 103,
+                            "start": 0,
+                          },
+                        }
+                      }
+                      title="artist"
+                      type="artist"
+                    >
+                      <Link
+                        href="/artist/251596"
+                        key="artist0link"
+                      >
+                        <a
+                          href="/artist/251596"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                        >
+                          Martin Birch
+                        </a>
+                      </Link>
+                      <Button
+                        active={false}
+                        disabled={false}
+                        key="artist0button"
+                        onClick={[Function]}
+                        variant="danger"
+                      >
+                        <button
+                          className="btn btn-danger"
+                          disabled={false}
+                          onClick={[Function]}
+                          type="button"
+                        >
+                          <FaTrash
+                            key="artist0icon"
+                          >
+                            <IconBase
+                              attr={
+                                Object {
+                                  "viewBox": "0 0 448 512",
+                                }
+                              }
+                            >
+                              <svg
+                                fill="currentColor"
+                                height="1em"
+                                stroke="currentColor"
+                                strokeWidth="0"
+                                style={
+                                  Object {
+                                    "color": undefined,
+                                  }
+                                }
+                                viewBox="0 0 448 512"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                                  key="0"
+                                />
+                              </svg>
+                            </IconBase>
+                          </FaTrash>
+                        </button>
+                      </Button>
+                      <br />
+                      <Link
+                        href="/artist/265502"
+                        key="artist1link"
+                      >
+                        <a
+                          href="/artist/265502"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                        >
+                          John Golden
+                        </a>
+                      </Link>
+                      <Button
+                        active={false}
+                        disabled={false}
+                        key="artist1button"
+                        onClick={[Function]}
+                        variant="danger"
+                      >
+                        <button
+                          className="btn btn-danger"
+                          disabled={false}
+                          onClick={[Function]}
+                          type="button"
+                        >
+                          <FaTrash
+                            key="artist1icon"
+                          >
+                            <IconBase
+                              attr={
+                                Object {
+                                  "viewBox": "0 0 448 512",
+                                }
+                              }
+                            >
+                              <svg
+                                fill="currentColor"
+                                height="1em"
+                                stroke="currentColor"
+                                strokeWidth="0"
+                                style={
+                                  Object {
+                                    "color": undefined,
+                                  }
+                                }
+                                viewBox="0 0 448 512"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                                  key="0"
+                                />
+                              </svg>
+                            </IconBase>
+                          </FaTrash>
+                        </button>
+                      </Button>
+                      <br />
+                      <Link
+                        href="/artist/386598"
+                        key="artist2link"
+                      >
+                        <a
+                          href="/artist/386598"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                        >
+                          Nilesh Patel
+                        </a>
+                      </Link>
+                      <Button
+                        active={false}
+                        disabled={false}
+                        key="artist2button"
+                        onClick={[Function]}
+                        variant="danger"
+                      >
+                        <button
+                          className="btn btn-danger"
+                          disabled={false}
+                          onClick={[Function]}
+                          type="button"
+                        >
+                          <FaTrash
+                            key="artist2icon"
+                          >
+                            <IconBase
+                              attr={
+                                Object {
+                                  "viewBox": "0 0 448 512",
+                                }
+                              }
+                            >
+                              <svg
+                                fill="currentColor"
+                                height="1em"
+                                stroke="currentColor"
+                                strokeWidth="0"
+                                style={
+                                  Object {
+                                    "color": undefined,
+                                  }
+                                }
+                                viewBox="0 0 448 512"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                                  key="0"
+                                />
+                              </svg>
+                            </IconBase>
+                          </FaTrash>
+                        </button>
+                      </Button>
+                      <br />
+                    </FavoriteList>
+                  </div>
+                </Transition>
+              </Fade>
+            </TabPane>
+            <TabPane
+              eventKey="label"
+              key=".1"
+            >
+              <Fade
+                appear={false}
+                in={false}
+                mountOnEnter={false}
+                timeout={300}
+                unmountOnExit={false}
+              >
+                <Transition
+                  addEndListener={[Function]}
+                  appear={false}
+                  enter={true}
+                  exit={true}
+                  in={false}
+                  mountOnEnter={false}
+                  onEnter={[Function]}
+                  onEntered={[Function]}
+                  onEntering={[Function]}
+                  onExit={[Function]}
+                  onExited={[Function]}
+                  onExiting={[Function]}
+                  timeout={300}
+                  unmountOnExit={false}
+                >
+                  <div
+                    aria-hidden={true}
+                    aria-labelledby="uncontrolled-tab-example-tab-label"
+                    className="fade tab-pane"
+                    id="uncontrolled-tab-example-tabpane-label"
+                    role="tabpanel"
+                  >
+                    <FavoriteList
+                      data={
+                        Array [
+                          Object {
+                            "__typename": "FavLabels",
+                            "label_id": "186075",
+                            "label_name": "The Mastering Lab",
+                          },
+                          Object {
+                            "__typename": "FavLabels",
+                            "label_id": "265113",
+                            "label_name": "SST Brüggemann GmbH",
+                          },
+                          Object {
+                            "__typename": "FavLabels",
+                            "label_id": "66254",
+                            "label_name": "Record Technology Incorporated",
+                          },
+                        ]
+                      }
+                      mutation={
+                        Object {
+                          "definitions": Array [
+                            Object {
+                              "directives": Array [],
+                              "kind": "OperationDefinition",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "removeLabelFromFavorites",
+                              },
+                              "operation": "mutation",
+                              "selectionSet": Object {
+                                "kind": "SelectionSet",
+                                "selections": Array [
+                                  Object {
+                                    "alias": undefined,
+                                    "arguments": Array [
+                                      Object {
+                                        "kind": "Argument",
+                                        "name": Object {
+                                          "kind": "Name",
+                                          "value": "label_id",
+                                        },
+                                        "value": Object {
+                                          "kind": "Variable",
+                                          "name": Object {
+                                            "kind": "Name",
+                                            "value": "id",
+                                          },
+                                        },
+                                      },
+                                    ],
+                                    "directives": Array [],
+                                    "kind": "Field",
+                                    "name": Object {
+                                      "kind": "Name",
+                                      "value": "remove_label_from_favorites",
+                                    },
+                                    "selectionSet": undefined,
+                                  },
+                                ],
+                              },
+                              "variableDefinitions": Array [
+                                Object {
+                                  "defaultValue": undefined,
+                                  "directives": Array [],
+                                  "kind": "VariableDefinition",
+                                  "type": Object {
+                                    "kind": "NonNullType",
+                                    "type": Object {
+                                      "kind": "NamedType",
+                                      "name": Object {
+                                        "kind": "Name",
+                                        "value": "ID",
+                                      },
+                                    },
+                                  },
+                                  "variable": Object {
+                                    "kind": "Variable",
+                                    "name": Object {
+                                      "kind": "Name",
+                                      "value": "id",
+                                    },
+                                  },
+                                },
+                              ],
+                            },
+                          ],
+                          "kind": "Document",
+                          "loc": Object {
+                            "end": 100,
+                            "start": 0,
+                          },
+                        }
+                      }
+                      title="label"
+                      type="label"
+                    >
+                      <Link
+                        href="/label/186075"
+                        key="label0link"
+                      >
+                        <a
+                          href="/label/186075"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                        >
+                          The Mastering Lab
+                        </a>
+                      </Link>
+                      <Button
+                        active={false}
+                        disabled={false}
+                        key="label0button"
+                        onClick={[Function]}
+                        variant="danger"
+                      >
+                        <button
+                          className="btn btn-danger"
+                          disabled={false}
+                          onClick={[Function]}
+                          type="button"
+                        >
+                          <FaTrash
+                            key="label0icon"
+                          >
+                            <IconBase
+                              attr={
+                                Object {
+                                  "viewBox": "0 0 448 512",
+                                }
+                              }
+                            >
+                              <svg
+                                fill="currentColor"
+                                height="1em"
+                                stroke="currentColor"
+                                strokeWidth="0"
+                                style={
+                                  Object {
+                                    "color": undefined,
+                                  }
+                                }
+                                viewBox="0 0 448 512"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                                  key="0"
+                                />
+                              </svg>
+                            </IconBase>
+                          </FaTrash>
+                        </button>
+                      </Button>
+                      <br />
+                      <Link
+                        href="/label/265113"
+                        key="label1link"
+                      >
+                        <a
+                          href="/label/265113"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                        >
+                          SST Brüggemann GmbH
+                        </a>
+                      </Link>
+                      <Button
+                        active={false}
+                        disabled={false}
+                        key="label1button"
+                        onClick={[Function]}
+                        variant="danger"
+                      >
+                        <button
+                          className="btn btn-danger"
+                          disabled={false}
+                          onClick={[Function]}
+                          type="button"
+                        >
+                          <FaTrash
+                            key="label1icon"
+                          >
+                            <IconBase
+                              attr={
+                                Object {
+                                  "viewBox": "0 0 448 512",
+                                }
+                              }
+                            >
+                              <svg
+                                fill="currentColor"
+                                height="1em"
+                                stroke="currentColor"
+                                strokeWidth="0"
+                                style={
+                                  Object {
+                                    "color": undefined,
+                                  }
+                                }
+                                viewBox="0 0 448 512"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                                  key="0"
+                                />
+                              </svg>
+                            </IconBase>
+                          </FaTrash>
+                        </button>
+                      </Button>
+                      <br />
+                      <Link
+                        href="/label/66254"
+                        key="label2link"
+                      >
+                        <a
+                          href="/label/66254"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                        >
+                          Record Technology Incorporated
+                        </a>
+                      </Link>
+                      <Button
+                        active={false}
+                        disabled={false}
+                        key="label2button"
+                        onClick={[Function]}
+                        variant="danger"
+                      >
+                        <button
+                          className="btn btn-danger"
+                          disabled={false}
+                          onClick={[Function]}
+                          type="button"
+                        >
+                          <FaTrash
+                            key="label2icon"
+                          >
+                            <IconBase
+                              attr={
+                                Object {
+                                  "viewBox": "0 0 448 512",
+                                }
+                              }
+                            >
+                              <svg
+                                fill="currentColor"
+                                height="1em"
+                                stroke="currentColor"
+                                strokeWidth="0"
+                                style={
+                                  Object {
+                                    "color": undefined,
+                                  }
+                                }
+                                viewBox="0 0 448 512"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                                  key="0"
+                                />
+                              </svg>
+                            </IconBase>
+                          </FaTrash>
+                        </button>
+                      </Button>
+                      <br />
+                    </FavoriteList>
+                  </div>
+                </Transition>
+              </Fade>
+            </TabPane>
+            <TabPane
+              eventKey="master"
+              key=".2"
+            >
+              <Fade
+                appear={false}
+                in={false}
+                mountOnEnter={false}
+                timeout={300}
+                unmountOnExit={false}
+              >
+                <Transition
+                  addEndListener={[Function]}
+                  appear={false}
+                  enter={true}
+                  exit={true}
+                  in={false}
+                  mountOnEnter={false}
+                  onEnter={[Function]}
+                  onEntered={[Function]}
+                  onEntering={[Function]}
+                  onExit={[Function]}
+                  onExited={[Function]}
+                  onExiting={[Function]}
+                  timeout={300}
+                  unmountOnExit={false}
+                >
+                  <div
+                    aria-hidden={true}
+                    aria-labelledby="uncontrolled-tab-example-tab-master"
+                    className="fade tab-pane"
+                    id="uncontrolled-tab-example-tabpane-master"
+                    role="tabpanel"
+                  >
+                    <FavoriteList
+                      data={
+                        Array [
+                          Object {
+                            "__typename": "FavMasters",
+                            "master_id": "32710",
+                            "master_name": "Pet Shop Boys - It's Alright",
+                          },
+                          Object {
+                            "__typename": "FavMasters",
+                            "master_id": "677440",
+                            "master_name": "Pixies - Indie Cindy",
+                          },
+                          Object {
+                            "__typename": "FavMasters",
+                            "master_id": "767810",
+                            "master_name": "J. Cole - 2014 Forest Hills Drive",
+                          },
+                        ]
+                      }
+                      mutation={
+                        Object {
+                          "definitions": Array [
+                            Object {
+                              "directives": Array [],
+                              "kind": "OperationDefinition",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "removeMasterFromFavorites",
+                              },
+                              "operation": "mutation",
+                              "selectionSet": Object {
+                                "kind": "SelectionSet",
+                                "selections": Array [
+                                  Object {
+                                    "alias": undefined,
+                                    "arguments": Array [
+                                      Object {
+                                        "kind": "Argument",
+                                        "name": Object {
+                                          "kind": "Name",
+                                          "value": "master_id",
+                                        },
+                                        "value": Object {
+                                          "kind": "Variable",
+                                          "name": Object {
+                                            "kind": "Name",
+                                            "value": "id",
+                                          },
+                                        },
+                                      },
+                                    ],
+                                    "directives": Array [],
+                                    "kind": "Field",
+                                    "name": Object {
+                                      "kind": "Name",
+                                      "value": "remove_master_from_favorites",
+                                    },
+                                    "selectionSet": undefined,
+                                  },
+                                ],
+                              },
+                              "variableDefinitions": Array [
+                                Object {
+                                  "defaultValue": undefined,
+                                  "directives": Array [],
+                                  "kind": "VariableDefinition",
+                                  "type": Object {
+                                    "kind": "NonNullType",
+                                    "type": Object {
+                                      "kind": "NamedType",
+                                      "name": Object {
+                                        "kind": "Name",
+                                        "value": "ID",
+                                      },
+                                    },
+                                  },
+                                  "variable": Object {
+                                    "kind": "Variable",
+                                    "name": Object {
+                                      "kind": "Name",
+                                      "value": "id",
+                                    },
+                                  },
+                                },
+                              ],
+                            },
+                          ],
+                          "kind": "Document",
+                          "loc": Object {
+                            "end": 103,
+                            "start": 0,
+                          },
+                        }
+                      }
+                      title="master"
+                      type="master"
+                    >
+                      <Link
+                        href="/master/32710"
+                        key="master0link"
+                      >
+                        <a
+                          href="/master/32710"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                        >
+                          Pet Shop Boys - It's Alright
+                        </a>
+                      </Link>
+                      <Button
+                        active={false}
+                        disabled={false}
+                        key="master0button"
+                        onClick={[Function]}
+                        variant="danger"
+                      >
+                        <button
+                          className="btn btn-danger"
+                          disabled={false}
+                          onClick={[Function]}
+                          type="button"
+                        >
+                          <FaTrash
+                            key="master0icon"
+                          >
+                            <IconBase
+                              attr={
+                                Object {
+                                  "viewBox": "0 0 448 512",
+                                }
+                              }
+                            >
+                              <svg
+                                fill="currentColor"
+                                height="1em"
+                                stroke="currentColor"
+                                strokeWidth="0"
+                                style={
+                                  Object {
+                                    "color": undefined,
+                                  }
+                                }
+                                viewBox="0 0 448 512"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                                  key="0"
+                                />
+                              </svg>
+                            </IconBase>
+                          </FaTrash>
+                        </button>
+                      </Button>
+                      <br />
+                      <Link
+                        href="/master/677440"
+                        key="master1link"
+                      >
+                        <a
+                          href="/master/677440"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                        >
+                          Pixies - Indie Cindy
+                        </a>
+                      </Link>
+                      <Button
+                        active={false}
+                        disabled={false}
+                        key="master1button"
+                        onClick={[Function]}
+                        variant="danger"
+                      >
+                        <button
+                          className="btn btn-danger"
+                          disabled={false}
+                          onClick={[Function]}
+                          type="button"
+                        >
+                          <FaTrash
+                            key="master1icon"
+                          >
+                            <IconBase
+                              attr={
+                                Object {
+                                  "viewBox": "0 0 448 512",
+                                }
+                              }
+                            >
+                              <svg
+                                fill="currentColor"
+                                height="1em"
+                                stroke="currentColor"
+                                strokeWidth="0"
+                                style={
+                                  Object {
+                                    "color": undefined,
+                                  }
+                                }
+                                viewBox="0 0 448 512"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                                  key="0"
+                                />
+                              </svg>
+                            </IconBase>
+                          </FaTrash>
+                        </button>
+                      </Button>
+                      <br />
+                      <Link
+                        href="/master/767810"
+                        key="master2link"
+                      >
+                        <a
+                          href="/master/767810"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                        >
+                          J. Cole - 2014 Forest Hills Drive
+                        </a>
+                      </Link>
+                      <Button
+                        active={false}
+                        disabled={false}
+                        key="master2button"
+                        onClick={[Function]}
+                        variant="danger"
+                      >
+                        <button
+                          className="btn btn-danger"
+                          disabled={false}
+                          onClick={[Function]}
+                          type="button"
+                        >
+                          <FaTrash
+                            key="master2icon"
+                          >
+                            <IconBase
+                              attr={
+                                Object {
+                                  "viewBox": "0 0 448 512",
+                                }
+                              }
+                            >
+                              <svg
+                                fill="currentColor"
+                                height="1em"
+                                stroke="currentColor"
+                                strokeWidth="0"
+                                style={
+                                  Object {
+                                    "color": undefined,
+                                  }
+                                }
+                                viewBox="0 0 448 512"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                                  key="0"
+                                />
+                              </svg>
+                            </IconBase>
+                          </FaTrash>
+                        </button>
+                      </Button>
+                      <br />
+                    </FavoriteList>
+                  </div>
+                </Transition>
+              </Fade>
+            </TabPane>
+            <TabPane
+              eventKey="release"
+              key=".3"
+            >
+              <Fade
+                appear={false}
+                in={false}
+                mountOnEnter={false}
+                timeout={300}
+                unmountOnExit={false}
+              >
+                <Transition
+                  addEndListener={[Function]}
+                  appear={false}
+                  enter={true}
+                  exit={true}
+                  in={false}
+                  mountOnEnter={false}
+                  onEnter={[Function]}
+                  onEntered={[Function]}
+                  onEntering={[Function]}
+                  onExit={[Function]}
+                  onExited={[Function]}
+                  onExiting={[Function]}
+                  timeout={300}
+                  unmountOnExit={false}
+                >
+                  <div
+                    aria-hidden={true}
+                    aria-labelledby="uncontrolled-tab-example-tab-release"
+                    className="fade tab-pane"
+                    id="uncontrolled-tab-example-tabpane-release"
+                    role="tabpanel"
+                  >
+                    <FavoriteList
+                      data={
+                        Array [
+                          Object {
+                            "__typename": "FavReleases",
+                            "release_id": "10521",
+                            "release_name": "Velvet Acid Christ - Fun With Knives",
+                          },
+                          Object {
+                            "__typename": "FavReleases",
+                            "release_id": "1393615",
+                            "release_name": "X-102 - Titan EP",
+                          },
+                          Object {
+                            "__typename": "FavReleases",
+                            "release_id": "2664677",
+                            "release_name": "Caetano* E Chico* - Juntos E Ao Vivo",
+                          },
+                        ]
+                      }
+                      mutation={
+                        Object {
+                          "definitions": Array [
+                            Object {
+                              "directives": Array [],
+                              "kind": "OperationDefinition",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "removeReleaseFromFavorites",
+                              },
+                              "operation": "mutation",
+                              "selectionSet": Object {
+                                "kind": "SelectionSet",
+                                "selections": Array [
+                                  Object {
+                                    "alias": undefined,
+                                    "arguments": Array [
+                                      Object {
+                                        "kind": "Argument",
+                                        "name": Object {
+                                          "kind": "Name",
+                                          "value": "release_id",
+                                        },
+                                        "value": Object {
+                                          "kind": "Variable",
+                                          "name": Object {
+                                            "kind": "Name",
+                                            "value": "id",
+                                          },
+                                        },
+                                      },
+                                    ],
+                                    "directives": Array [],
+                                    "kind": "Field",
+                                    "name": Object {
+                                      "kind": "Name",
+                                      "value": "remove_release_from_favorites",
+                                    },
+                                    "selectionSet": undefined,
+                                  },
+                                ],
+                              },
+                              "variableDefinitions": Array [
+                                Object {
+                                  "defaultValue": undefined,
+                                  "directives": Array [],
+                                  "kind": "VariableDefinition",
+                                  "type": Object {
+                                    "kind": "NonNullType",
+                                    "type": Object {
+                                      "kind": "NamedType",
+                                      "name": Object {
+                                        "kind": "Name",
+                                        "value": "ID",
+                                      },
+                                    },
+                                  },
+                                  "variable": Object {
+                                    "kind": "Variable",
+                                    "name": Object {
+                                      "kind": "Name",
+                                      "value": "id",
+                                    },
+                                  },
+                                },
+                              ],
+                            },
+                          ],
+                          "kind": "Document",
+                          "loc": Object {
+                            "end": 106,
+                            "start": 0,
+                          },
+                        }
+                      }
+                      title="release"
+                      type="release"
+                    >
+                      <Link
+                        href="/release/10521"
+                        key="release0link"
+                      >
+                        <a
+                          href="/release/10521"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                        >
+                          Velvet Acid Christ - Fun With Knives
+                        </a>
+                      </Link>
+                      <Button
+                        active={false}
+                        disabled={false}
+                        key="release0button"
+                        onClick={[Function]}
+                        variant="danger"
+                      >
+                        <button
+                          className="btn btn-danger"
+                          disabled={false}
+                          onClick={[Function]}
+                          type="button"
+                        >
+                          <FaTrash
+                            key="release0icon"
+                          >
+                            <IconBase
+                              attr={
+                                Object {
+                                  "viewBox": "0 0 448 512",
+                                }
+                              }
+                            >
+                              <svg
+                                fill="currentColor"
+                                height="1em"
+                                stroke="currentColor"
+                                strokeWidth="0"
+                                style={
+                                  Object {
+                                    "color": undefined,
+                                  }
+                                }
+                                viewBox="0 0 448 512"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                                  key="0"
+                                />
+                              </svg>
+                            </IconBase>
+                          </FaTrash>
+                        </button>
+                      </Button>
+                      <br />
+                      <Link
+                        href="/release/1393615"
+                        key="release1link"
+                      >
+                        <a
+                          href="/release/1393615"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                        >
+                          X-102 - Titan EP
+                        </a>
+                      </Link>
+                      <Button
+                        active={false}
+                        disabled={false}
+                        key="release1button"
+                        onClick={[Function]}
+                        variant="danger"
+                      >
+                        <button
+                          className="btn btn-danger"
+                          disabled={false}
+                          onClick={[Function]}
+                          type="button"
+                        >
+                          <FaTrash
+                            key="release1icon"
+                          >
+                            <IconBase
+                              attr={
+                                Object {
+                                  "viewBox": "0 0 448 512",
+                                }
+                              }
+                            >
+                              <svg
+                                fill="currentColor"
+                                height="1em"
+                                stroke="currentColor"
+                                strokeWidth="0"
+                                style={
+                                  Object {
+                                    "color": undefined,
+                                  }
+                                }
+                                viewBox="0 0 448 512"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                                  key="0"
+                                />
+                              </svg>
+                            </IconBase>
+                          </FaTrash>
+                        </button>
+                      </Button>
+                      <br />
+                      <Link
+                        href="/release/2664677"
+                        key="release2link"
+                      >
+                        <a
+                          href="/release/2664677"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                        >
+                          Caetano* E Chico* - Juntos E Ao Vivo
+                        </a>
+                      </Link>
+                      <Button
+                        active={false}
+                        disabled={false}
+                        key="release2button"
+                        onClick={[Function]}
+                        variant="danger"
+                      >
+                        <button
+                          className="btn btn-danger"
+                          disabled={false}
+                          onClick={[Function]}
+                          type="button"
+                        >
+                          <FaTrash
+                            key="release2icon"
+                          >
+                            <IconBase
+                              attr={
+                                Object {
+                                  "viewBox": "0 0 448 512",
+                                }
+                              }
+                            >
+                              <svg
+                                fill="currentColor"
+                                height="1em"
+                                stroke="currentColor"
+                                strokeWidth="0"
+                                style={
+                                  Object {
+                                    "color": undefined,
+                                  }
+                                }
+                                viewBox="0 0 448 512"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                                  key="0"
+                                />
+                              </svg>
+                            </IconBase>
+                          </FaTrash>
+                        </button>
+                      </Button>
+                      <br />
+                    </FavoriteList>
+                  </div>
+                </Transition>
+              </Fade>
+            </TabPane>
+          </div>
+        </ForwardRef>
+      </TabContainer>
+    </Tabs>
+  </styledComponents__StyledTabs>
+</MyTabs>
+`;

@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"},{"v":{"$numberInt":"2"},"key":{"user_id":{"$numberInt":"1"},"master_id":{"$numberInt":"1"},"master_name":{"$numberInt":"1"}},"name":"user_id_1_master_id_1_master_name_1","background":true,"unique":true}],"uuid":"b715f9b1a6e8480a8d082285cf2d5929","collectionName":"favmasters","type":"collection"}
