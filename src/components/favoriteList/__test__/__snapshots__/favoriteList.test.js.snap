@@ -97,6 +97,7 @@ exports[`FavoriteList snapshot test 1`] = `
 >
   <Link
     href="/release/10521"
+    key="release0link"
   >
     <a
       href="/release/10521"
@@ -109,6 +110,7 @@ exports[`FavoriteList snapshot test 1`] = `
   <Button
     active={false}
     disabled={false}
+    key="release0button"
     onClick={[Function]}
     variant="danger"
   >
@@ -118,7 +120,9 @@ exports[`FavoriteList snapshot test 1`] = `
       onClick={[Function]}
       type="button"
     >
-      <FaTrash>
+      <FaTrash
+        key="release0icon"
+      >
         <IconBase
           attr={
             Object {
@@ -152,6 +156,7 @@ exports[`FavoriteList snapshot test 1`] = `
   <br />
   <Link
     href="/release/1393615"
+    key="release1link"
   >
     <a
       href="/release/1393615"
@@ -164,6 +169,7 @@ exports[`FavoriteList snapshot test 1`] = `
   <Button
     active={false}
     disabled={false}
+    key="release1button"
     onClick={[Function]}
     variant="danger"
   >
@@ -173,7 +179,9 @@ exports[`FavoriteList snapshot test 1`] = `
       onClick={[Function]}
       type="button"
     >
-      <FaTrash>
+      <FaTrash
+        key="release1icon"
+      >
         <IconBase
           attr={
             Object {
@@ -207,6 +215,7 @@ exports[`FavoriteList snapshot test 1`] = `
   <br />
   <Link
     href="/release/2664677"
+    key="release2link"
   >
     <a
       href="/release/2664677"
@@ -219,6 +228,7 @@ exports[`FavoriteList snapshot test 1`] = `
   <Button
     active={false}
     disabled={false}
+    key="release2button"
     onClick={[Function]}
     variant="danger"
   >
@@ -228,7 +238,9 @@ exports[`FavoriteList snapshot test 1`] = `
       onClick={[Function]}
       type="button"
     >
-      <FaTrash>
+      <FaTrash
+        key="release2icon"
+      >
         <IconBase
           attr={
             Object {

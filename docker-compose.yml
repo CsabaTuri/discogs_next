@@ -61,21 +61,5 @@ services:
       - mongodb
     environment:
       - CHOKIDAR_USEPOLLING=true
-  #storybook
-  storybook:
-    build:
-      context: .
-      dockerfile: docker/Dockerfile.storybook
-    container_name: storybook
-    restart: always
-    command: npm run storybook
-    volumes:
-      - .:/app
-      - /app/node_modules
-      - /app/.next
-    ports:
-      - 6006:6006
-    environment:
-      - CHOKIDAR_USEPOLLING=true
 volumes:
   mongodb_data_container:

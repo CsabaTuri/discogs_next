@@ -5,22 +5,8 @@ const { FavMaster } = require("../mongodb/models/fav_masters");
 const { FavRelease } = require("../mongodb/models/fav_releases");
 const { FavLabel } = require("../mongodb/models/fav_label");
 const { User } = require("../mongodb/models/user");
-require('dotenv').config();
-const privateKey = `-----BEGIN RSA PRIVATE KEY-----
-MIICWwIBAAKBgHCTviWIVte2drMK3mqMR369zokb3m+/ZkfHNP1e78PA/ZqWVkyE
-c53eu/qjRZl7nUH+1sk54feArlN7Q31oq2RnNOpxOYtHbrMWI5mvyuC8clne2wRN
-S2xYlDJyfj5LiIcd9B1GvnONUaNzrePfXiG/xl/qasE3tyJkaRhElzVpAgMBAAEC
-gYBLmp0vfaG82thao6j9a1o0fuou4F2BNMxO1jT7F//zui9W2zH3z1gKJOSfjXkX
-e5IAGVJL76iW3H+2puiLV3kKXRS4DT7WZyMfov88+r7HugpAVncuz/dmFXzDTb8h
-e3F5cv8+1hfSvfvZsfZQf6ZOZFi0Bf+22HB1iUDzNUKnAQJBAMY9f10upHcOCbsx
-tyx0zCnAcBmTBRO1yYlZxJsrdDOLGsKXbQPdZQioIMAy1zBGk6cDGnqLcw+UWD72
-Gl4fDgkCQQCRYLx34INmLXLrE9pksk8syOu/98BdlNVAIetx1dDI/bEC/Q4hlPR/
-GSFelt30ZvGYXSHKJTPgig4l8lK4dMRhAkEAqBm757NGiSIhRFg7AHqmKX1iUX1m
-37jWBh9V5VKqvY5mib3IFm/lXbrb0r8J1Ij0abnq+SFI11wunG0qHMfuqQJAJ59b
-/rg8V+7vMU756RQILEaeqnWWAmt8K7yS9TW3b/Bk/FGINnLoqHNq+uLXn7MnCcXo
-XbYCC6LU9Fa1YPzCQQJAR70bxh2i3l4s7wHt8YyPHWT/vPJPDcqDImqXfNynTbhg
-cMATuu8ucMOP6QBf9jzOsZ2FrShNm9P4F9EN2VHEFQ==
------END RSA PRIVATE KEY-----`;
+const fs = require('fs');
+var privateKey = fs.readFileSync('private.key');
 const mutations = {
   delete_acc: async (_parent:any, _args:any, context:any) => {
     const token = context.req.headers.authorization.replace(/^Bearer\s/, "");

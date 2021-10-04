@@ -6,8 +6,6 @@ const url = `${process.env.NODE_ENV === "development"?"mongodb":"mongodb+srv"}:/
 console.log(url)
 mongoose.connect(url, {
   useUnifiedTopology: true,
-  useFindAndModify: false,
-  useCreateIndex: true,
   useNewUrlParser: true,
 });
 mongoose.connection.once("open", () =>

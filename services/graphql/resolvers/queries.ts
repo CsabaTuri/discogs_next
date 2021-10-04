@@ -8,23 +8,8 @@ const { FavMaster } = require("../mongodb/models/fav_masters");
 const { FavRelease } = require("../mongodb/models/fav_releases");
 const { FavLabel } = require("../mongodb/models/fav_label");
 const { Message } = require("../mongodb/models/message");
-require('dotenv').config();
-console.log(process.env.PRIVATE_KEY)
-const privateKey = `-----BEGIN RSA PRIVATE KEY-----
-MIICWwIBAAKBgHCTviWIVte2drMK3mqMR369zokb3m+/ZkfHNP1e78PA/ZqWVkyE
-c53eu/qjRZl7nUH+1sk54feArlN7Q31oq2RnNOpxOYtHbrMWI5mvyuC8clne2wRN
-S2xYlDJyfj5LiIcd9B1GvnONUaNzrePfXiG/xl/qasE3tyJkaRhElzVpAgMBAAEC
-gYBLmp0vfaG82thao6j9a1o0fuou4F2BNMxO1jT7F//zui9W2zH3z1gKJOSfjXkX
-e5IAGVJL76iW3H+2puiLV3kKXRS4DT7WZyMfov88+r7HugpAVncuz/dmFXzDTb8h
-e3F5cv8+1hfSvfvZsfZQf6ZOZFi0Bf+22HB1iUDzNUKnAQJBAMY9f10upHcOCbsx
-tyx0zCnAcBmTBRO1yYlZxJsrdDOLGsKXbQPdZQioIMAy1zBGk6cDGnqLcw+UWD72
-Gl4fDgkCQQCRYLx34INmLXLrE9pksk8syOu/98BdlNVAIetx1dDI/bEC/Q4hlPR/
-GSFelt30ZvGYXSHKJTPgig4l8lK4dMRhAkEAqBm757NGiSIhRFg7AHqmKX1iUX1m
-37jWBh9V5VKqvY5mib3IFm/lXbrb0r8J1Ij0abnq+SFI11wunG0qHMfuqQJAJ59b
-/rg8V+7vMU756RQILEaeqnWWAmt8K7yS9TW3b/Bk/FGINnLoqHNq+uLXn7MnCcXo
-XbYCC6LU9Fa1YPzCQQJAR70bxh2i3l4s7wHt8YyPHWT/vPJPDcqDImqXfNynTbhg
-cMATuu8ucMOP6QBf9jzOsZ2FrShNm9P4F9EN2VHEFQ==
------END RSA PRIVATE KEY-----`;
+const fs = require('fs');
+var privateKey = fs.readFileSync('private.key');
 const saltRounds = 10;
 const queries = {
   login: async (_parent: any, args: any, _context: any, _info: any) => {
@@ -33,10 +18,9 @@ const queries = {
 
     if (user_name && password) {
       try {
-        const results = await User.find({$or:[{ user_name: user_name },{ email: user_name }]}).exec();
-
-        const comparison = await bcrypt.compare(password, results[0].password);
-        if (comparison) {
+        const results = await User.find({ $or: [{ user_name: user_name }, { email: user_name }] }).exec();
+        try {
+          await bcrypt.compare(password, results[0].password);
           const userData = {
             user_name: results[0].user_name,
             email: results[0].email,
@@ -44,12 +28,11 @@ const queries = {
             last_name: results[0].last_name,
             user_id: results[0].id,
           };
-
           const token = jwt.sign(userData, privateKey, {
             algorithm: "RS256",
           });
           return { token: token, userData: userData };
-        } else {
+        } catch (err: any) {
           throw new AuthenticationError("Not login");
         }
       } catch (err: any) {
@@ -110,7 +93,7 @@ const queries = {
     try {
       const token = context.req.headers.authorization.replace(/^Bearer\s/, "");
       jwt.verify(token, privateKey, { algorithms: ["RS256"] });
-      const results = await User.find({}, {user_name: 1,first_name: 1,last_name: 1,email: 1,_id:1} )
+      const results = await User.find({}, { user_name: 1, first_name: 1, last_name: 1, email: 1, _id: 1 })
       return results
     } catch (err: any) {
       console.log(err.message);
